@@ -30,3 +30,11 @@
         train.py
   results/				# For model eval results (data & img)
 ```
+
+### Prompt
+
+> output 1 description for 3 images (model 1 test data)
+
+```
+Below are three image about similar scenes. Write ONE concise(< 50 tokens), objective sentence that summarizes what all three images depict together. Avoid repetition and avoid listing each image separately.
+```
