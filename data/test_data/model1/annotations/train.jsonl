@@ -1,0 +1,37 @@
+
+{
+  "id": "000001",
+  "images": [
+    "data/test_data/model1/images/train/000001_a.jpg",
+    "data/test_data/model1/images/train/000001_b.jpg",
+    "data/test_data/model1/images/train/000001_c.jpg",
+  ],
+  "target_caption": "Two giraffes and a zebra graze in a grassy, wooded zoo area, while a vehicle passes a small stop sign with a person visible in the side mirror."
+}
+{
+  "id": "000002",
+  "images": [
+    "data/test_data/model1/images/train/000002_a.jpg",
+    "data/test_data/model1/images/train/000002_b.jpg",
+    "data/test_data/model1/images/train/000002_c.jpg",
+  ],
+  "target_caption": "Several people skate in a graffiti-covered park near a riverside walkway, while a dog runs across a grassy field toward a toy."
+}
+{
+  "id": "000003",
+  "images": [
+    "data/test_data/model1/images/train/000003_a.jpg",
+    "data/test_data/model1/images/train/000003_b.jpg",
+    "data/test_data/model1/images/train/000003_c.jpg",
+  ],
+  "target_caption": "People enjoying a pleasant outdoor day with flowers, sunshine, and leisure activities in a grassy open area."
+}
+{
+  "id": "000004",
+  "images": [
+    "data/test_data/model1/images/train/000004_a.jpg",
+    "data/test_data/model1/images/train/000004_b.jpg",
+    "data/test_data/model1/images/train/000004_c.jpg",
+  ],
+  "target_caption": "Transportation and travel activities involving airplanes, city streets, and an airport pickup area at night."
+}
