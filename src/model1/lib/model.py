@@ -54,6 +54,7 @@ class ImageFeatureAggregator(nn.Module):
                 self.visual_proj = None
                 token_input_dim = input_dim
             self.token_proj = nn.Linear(token_input_dim, hidden_dim * tokens_per_image)
+            self.image_pos_emb = nn.Embedding(3, hidden_dim)  # encodes which image (0/1/2) each token belongs to
             encoder_layer = nn.TransformerEncoderLayer(d_model=hidden_dim,
                                                        nhead=attention_heads,
                                                        batch_first=True)
@@ -106,6 +107,9 @@ class ImageFeatureAggregator(nn.Module):
                 visual_features = image_features  # (batch_size, 3, input_dim)
             tokens = self.token_proj(visual_features)  # (batch_size, 3, hidden_dim * K)
             tokens = tokens.view(batch_size, num_images * self.tokens_per_image, self.hidden_dim)
+            # Add image position embeddings: tokens from image i get embedding i
+            pos_ids = torch.arange(num_images, device=tokens.device).repeat_interleave(self.tokens_per_image)
+            tokens = tokens + self.image_pos_emb(pos_ids).unsqueeze(0)
             tokens = self.token_encoder(tokens)
             return self.final_norm(tokens)
 

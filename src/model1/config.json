@@ -1,6 +1,6 @@
 {
   "model": {
-    "clip_dim": 512,
+    "clip_dim": 768,
     "hidden_dim": 512,
     "t5_model_name": "t5-base",
     "aggregation_method": "multi_token",
@@ -33,7 +33,7 @@
   "evaluation": {
     "eval_interval": 1,
     "eval_samples": null,
-    "primary_metric": "CIDEr"
+    "primary_metric": "METEOR"
   },
 
   "data": {

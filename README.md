@@ -16,8 +16,8 @@ Given three semantically related images, VHaLM generates a structurally valid **
 
 ### Stage 1 — Multi-Image Captioner
 
-- Encodes each image with a **frozen CLIP ViT-B/32** encoder
-- Fuses three image embeddings via **lightweight multi-token attention** with semantic tag augmentation
+- Encodes each image with a **frozen CLIP ViT-L/14** encoder (768-dim)
+- Fuses three image embeddings via **multi-token attention with image position embeddings** and semantic tag augmentation
 - Decodes a unified description using **LoRA-adapted T5-base**
 
 ### Stage 2 — Haiku Generator (training-free)

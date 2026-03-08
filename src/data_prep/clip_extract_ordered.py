@@ -5,16 +5,27 @@ import numpy as np
 import json
 from tqdm import tqdm
 import os
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--model", default="ViT-L/14", choices=["ViT-B/32", "ViT-L/14"],
+                    help="CLIP model variant (ViT-L/14 gives 768-dim features, ViT-B/32 gives 512-dim)")
+parser.add_argument("--image_dir", default="coco_subset/images")
+parser.add_argument("--caption_json", default="coco_subset/captions_subset.json")
+parser.add_argument("--features_path", default="image_features.npy")
+parser.add_argument("--ids_path", default="image_ids.json")
+args = parser.parse_args()
 
 # 路径配置
-image_dir = "coco_subset/images"
-caption_json = "coco_subset/captions_subset.json"
-features_path = "image_features.npy"
-ids_path = "image_ids.json"
+image_dir = args.image_dir
+caption_json = args.caption_json
+features_path = args.features_path
+ids_path = args.ids_path
 
 # 1. 加载模型
 device = "cuda" if torch.cuda.is_available() else "cpu"
-model, preprocess = clip.load("ViT-B/32", device=device)
+model, preprocess = clip.load(args.model, device=device)
+print(f"Loaded CLIP {args.model}, feature dim: {model.visual.output_dim}")
 
 # 2. 读取 captions_subset.json 中的顺序
 with open(caption_json, 'r') as f:
