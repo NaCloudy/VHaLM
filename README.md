@@ -2,7 +2,7 @@
 
 > Given three semantically related images, generate a structurally valid **5-7-5 English haiku** that captures their shared visual essence.
 
----
+
 
 ## Examples
 
@@ -20,7 +20,7 @@
 
 > *Colors dance on wind, / Laughter echoes with the waves, / Sky and sea embrace.*
 
----
+
 
 ## Results
 
@@ -39,7 +39,7 @@
 | Structure compliance | 5.0 / 5 |
 | Overall | 18.4 / 25 |
 
----
+
 
 ## How It Works
 
@@ -76,7 +76,7 @@
 - **Deterministic syllable checker** enforces exact 5-7-5 structure
 - **LLM-as-judge reranking** scores candidates on relevance, imagery, and fluency
 
----
+
 
 ## Dataset
 
@@ -87,7 +87,6 @@
 3. Mine triangle cliques for high-consistency triplets
 4. Synthesize pseudo-reference captions via GPT-4o-mini fusion
 
----
 
 ## Repository Structure
 
@@ -115,7 +114,7 @@
 └── assets/examples/                       # Example image triplets
 ```
 
----
+
 
 ## Setup
 
@@ -129,7 +128,6 @@ pip install -r src/model2/requirements.txt
 
 CLIP, T5, and BLIP weights are downloaded automatically via HuggingFace at runtime.
 
----
 
 ## References
 
