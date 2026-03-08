@@ -1,0 +1,13 @@
+{
+  "timestamp": "20251210_084648",
+  "experiment_dir": "/root/autodl-tmp/myprj/src/model1/outputs/exp2_att2_tag6_l.3r1e-4_ws150_20251124_134150(final_best)",
+  "ablation_mode": "zero-fill",
+  "max_samples": null,
+  "metrics": {
+    "METEOR": 0.26049016806104064,
+    "BLEU-1": 0.3304498923456642,
+    "BLEU-2": 0.1793575406210136,
+    "BLEU-3": 0.10207402926768125,
+    "BLEU-4": 0.0637326007595878
+  }
+}

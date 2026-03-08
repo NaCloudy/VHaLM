@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Binary / large data
+*.npy
+*.pth
+
+# Runtime outputs
+src/model1/outputs/
+src/model2/outputs/
+data/model1_data/blip_tags/
+data/model1_data/clip_tags/
+
+# Downloaded datasets / images
+data/model1_data/
+data/test_data/
+clip_453_ysy/coco_subset/images/
+
+# Reports (course assignments)
+reports/
+
+# Claude Code
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

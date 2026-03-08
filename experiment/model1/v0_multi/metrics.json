@@ -1,0 +1,13 @@
+{
+  "timestamp": "20251210_084342",
+  "experiment_dir": "/root/autodl-tmp/myprj/src/model1/outputs/image2haiku_20251106_125849(midway-300-attention)",
+  "ablation_mode": "multi",
+  "max_samples": null,
+  "metrics": {
+    "METEOR": 0.22946312279030104,
+    "BLEU-1": 0.30166719701098227,
+    "BLEU-2": 0.15313323477169496,
+    "BLEU-3": 0.08196962007898688,
+    "BLEU-4": 0.04999287311589243
+  }
+}
