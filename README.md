@@ -2,8 +2,6 @@
 
 > Given three semantically related images, generate a structurally valid **5-7-5 English haiku** that captures their shared visual essence.
 
-UW-Madison STAT 453 (Deep Learning), Fall 2025 — Group 3
-
 ---
 
 ## Examples
