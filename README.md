@@ -17,10 +17,10 @@ UW-Madison STAT 453 (Deep Learning), Fall 2025 — Group 3
 
 &nbsp;
 
-| <img src="assets/examples/1952_1.jpg" width="210"> | <img src="assets/examples/1952_2.jpg" width="210"> | <img src="assets/examples/1952_3.jpg" width="210"> |
+| <img src="assets/examples/191_1.jpg" width="210"> | <img src="assets/examples/191_2.jpg" width="210"> | <img src="assets/examples/191_3.jpg" width="210"> |
 |:---:|:---:|:---:|
 
-> *Rackets slice through air, / Sunlight dances on the court, / Laughter meets the breeze.*
+> *Colors dance on wind, / Laughter echoes with the waves, / Sky and sea embrace.*
 
 ---
 
