@@ -41,12 +41,32 @@ Given three semantically related images, VHaLM generates a structurally valid **
 
 ## Results
 
-| Model | BLEU-1 | BLEU-4 | METEOR | CIDEr |
-|-------|--------|--------|--------|-------|
-| T5-small baseline | — | — | — | — |
-| VHaLM Stage 1 | — | — | **+0.031** | — |
+### Stage 1 — Multi-Image Captioning
 
-Stage 2: **70% exact 5-7-5 structure** after rule-based fixes (20-sample pilot).
+| Model | BLEU-1 | BLEU-4 | METEOR |
+|-------|--------|--------|--------|
+| T5-small baseline | 0.302 | 0.050 | 0.229 |
+| VHaLM Stage 1 (ours) | **0.332** | **0.065** | **0.260** |
+
+### Stage 2 — Haiku Generation
+
+LLM-as-judge scoring (GPT-4o-mini, scale 1–5): **avg. relevance 4.3 / 5**, **100% structure compliance** (≥4/5) on test set.
+
+Example outputs:
+
+```
+Colors dance on wind        [group 191 — beach/ocean/sky]
+Laughter echoes with the waves
+Sky and sea embrace
+
+White ball in the air,      [group 1468 — tennis match]
+Racket arcs through summer light,
+Joy leaps with each swing.
+
+Waves kiss golden sand      [group 1413 — beach/frisbee]
+A blue shirt dances with joy
+Frisbee soaring high
+```
 
 ---
 
