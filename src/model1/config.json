@@ -1,6 +1,6 @@
 {
   "model": {
-    "clip_dim": 768,
+    "clip_dim": 512,
     "hidden_dim": 512,
     "t5_model_name": "t5-base",
     "aggregation_method": "multi_token",

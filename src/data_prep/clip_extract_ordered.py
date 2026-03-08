@@ -8,7 +8,7 @@ import os
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--model", default="ViT-L/14", choices=["ViT-B/32", "ViT-L/14"],
+parser.add_argument("--model", default="ViT-B/32", choices=["ViT-B/32", "ViT-L/14"],
                     help="CLIP model variant (ViT-L/14 gives 768-dim features, ViT-B/32 gives 512-dim)")
 parser.add_argument("--image_dir", default="coco_subset/images")
 parser.add_argument("--caption_json", default="coco_subset/captions_subset.json")
