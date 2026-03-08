@@ -52,21 +52,15 @@ Given three semantically related images, VHaLM generates a structurally valid **
 
 LLM-as-judge scoring (GPT-4o-mini, scale 1–5): **avg. relevance 4.3 / 5**, **100% structure compliance** (≥4/5) on test set.
 
-Example outputs:
+**Example outputs:**
 
-```
-Colors dance on wind        [group 191 — beach/ocean/sky]
-Laughter echoes with the waves
-Sky and sea embrace
+| <img src="assets/examples/907_1.jpg" width="220"> | <img src="assets/examples/907_2.jpg" width="220"> | <img src="assets/examples/907_3.jpg" width="220"> |
+|:---:|:---:|:---:|
+| | *Salt spray in the air, / He dances on azure backs, / Ocean's pulse beneath.* | |
 
-White ball in the air,      [group 1468 — tennis match]
-Racket arcs through summer light,
-Joy leaps with each swing.
-
-Waves kiss golden sand      [group 1413 — beach/frisbee]
-A blue shirt dances with joy
-Frisbee soaring high
-```
+| <img src="assets/examples/1952_1.jpg" width="220"> | <img src="assets/examples/1952_2.jpg" width="220"> | <img src="assets/examples/1952_3.jpg" width="220"> |
+|:---:|:---:|:---:|
+| | *Rackets slice through air, / Sunlight dances on the court, / Laughter meets the breeze.* | |
 
 ---
 
